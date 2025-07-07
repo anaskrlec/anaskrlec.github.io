@@ -22,7 +22,7 @@
 
             section{
                 background-color: rgb(225, 205, 180);
-                padding-left: 32px;
+                padding-left: 40px;
                 padding-right: 32px;
                 padding-top: 24px;
                 padding-bottom: 24px;
@@ -38,10 +38,17 @@
                 max-width: 1024px;
             }
 
+            .wrapper {
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 1024px;
+            }
+
             img {
                 width: 50%;
                 aspect-ratio: 16 / 9;
                 object-fit: cover;
+                border-radius: 16px;
             }
 
             ul {
@@ -53,13 +60,27 @@
                 font-style: italic;
             }
 
+            th, td {
+                padding-right: 24px;
+                padding-bottom: 8px;
+                padding-bottom: 8px;
+            }
+
+            th {
+                text-align: left;
+            }
+
         </style>
     </head>
 
     <body>
+        <header class="wrapper header my-fancy-class"> <!--kada je više klasa-->
+            <h1>Welcome to my portfolio!</h1>
+        </header>
+
         <main>
             <section>
-                <h1>About me</h1>
+                <h2>About me</h2>
                 <p>My name is <strong>Ana Škrlec</strong> and I am <strong>Product Designer</strong> form Croatia</p>
                 <p>My <strong>skills</strong> include:</p>
                 <ul class="list">
@@ -79,7 +100,7 @@
         </section>
 
         <section>
-            <h1>Projects</h1>
+            <h2>Projects</h2>
             <ul>
                 <li>
                     <div><img src="./media/search.png" alt="Project-1"></div>
@@ -93,7 +114,58 @@
             </ul>
 
         </section>
+
+        <section>
+            <h2>Price List</h2>
+            <table>
+                <thead>
+                <tr>
+                    <th></th>
+                    <th>Q1</th>
+                    <th>Q2</th>
+                    <th>Q3</th>
+                    <th>Q4</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>Sat</td>
+                    <td>€</td>
+                    <td>€</td>
+                    <td>€</td>
+                    <td>€</td>
+                </tr>
+                <tr>
+                    <td>Dan</td>
+                    <td>€€</td>
+                    <td>€€</td>
+                    <td>€€</td>
+                    <td>€€</td>
+                </tr>
+                <tr>
+                    <td>Tjedan</td>
+                    <td>€€€</td>
+                    <td>€€€</td>
+                    <td>€€€</td>
+                    <td>€€€</td>
+                </tr>
+                <tr>
+                    <td>Mjesec</td>
+                    <td>€€€€</td>
+                    <td>€€€€</td>
+                    <td>€€€€</td>
+                    <td>€€€€</td>
+                </tr>
+
+            </tbody>
+        </table>
+        </section>
         </main>
+
+        <footer class="wrapper">
+            <p>&copy;Ana Škrlec</p>
+        </footer>
 
     </body>
 
